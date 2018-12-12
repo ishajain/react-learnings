@@ -1,0 +1,38 @@
+{
+  "name": "react-learnings",
+  "version": "1.0.0",
+  "description": "All my react learnings.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build",
+    "build": "webpack -d && cp src/index.html dist/index.html && webpack-dev-server --content-base src/ --mode development --inline"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ishajain/react-learnings.git"
+  },
+  "keywords": [
+    "react",
+    "basic",
+    "learnings"
+  ],
+  "author": "Isha Jain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ishajain/react-learnings/issues"
+  },
+  "homepage": "https://github.com/ishajain/react-learnings#readme",
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}
