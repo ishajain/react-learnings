@@ -6,7 +6,7 @@ var SRC_DIR = path.resolve(__dirname,"src");
 
 var config = 
 {
-   entry: SRC_DIR + "/app/components/index.js",
+   entry: SRC_DIR + "/app/index.js",
    output: { 
        path: DIST_DIR + "/app",
        filename:"main.js",
