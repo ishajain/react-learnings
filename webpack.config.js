@@ -1,5 +1,6 @@
 var webpack = require("webpack");
 var path = require("path");
+var AsyncChunkNames = require('webpack-async-chunk-names-plugin');
 
 var DIST_DIR = path.resolve(__dirname,"dist");
 var SRC_DIR = path.resolve(__dirname,"src");
@@ -14,8 +15,12 @@ var config =
        publicPath: "/app/"
    },
 
+   plugins: [
+    new AsyncChunkNames()
+   ],
+
    optimization: {
-    splitChunks: {
+     splitChunks: {
         cacheGroups: {
             default: false,
             vendors: false,
@@ -30,9 +35,9 @@ var config =
             }
         }
     }
-},
+   },
 
-    module: {
+  module: {
         rules: [
           {
             test: /\.(js|jsx)$/,
@@ -51,7 +56,7 @@ var config =
     
     
 
-   };          
+};          
 
 
 module.exports = config;

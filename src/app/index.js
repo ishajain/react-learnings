@@ -2,7 +2,7 @@ import React from "react";
 import { render } from "react-dom";
 import {HomeComponent} from "./components/HomeComponent";
 import {AboutComponent} from "./components/AboutComponent";
-import {ContactComponent} from "./components/ContactComponent";
+import {AsyncContactComponent} from "./components/AsyncContactComponent";
 import {BrowserRouter, Switch, NavLink as Link,Route} from "react-router-dom";
 
 class AppComponent extends React.Component{
@@ -22,7 +22,7 @@ class AppComponent extends React.Component{
                 <Switch>
                     <Route exact path="/" component={ HomeComponent } />
                     <Route path="/about" component={ AboutComponent } />
-                    <Route path="/contact" component={ ContactComponent } />
+                    <Route path="/contact" component={ AsyncContactComponent } />
                 </Switch>
             </div>
             </BrowserRouter>

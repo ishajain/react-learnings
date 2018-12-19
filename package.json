@@ -25,6 +25,7 @@
   "dependencies": {
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
+    "react-loadable": "^5.5.0",
     "react-router-dom": "^4.3.1"
   },
   "devDependencies": {
@@ -32,7 +33,9 @@
     "@babel/preset-env": "^7.2.0",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.4",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "webpack": "^4.27.1",
+    "webpack-async-chunk-names-plugin": "^0.1.1",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10"
   }

@@ -3,6 +3,6 @@
       "@babel/preset-env",
       "@babel/preset-react"
     ],
-    "plugins": ["@babel/plugin-transform-react-jsx"]
+    "plugins": ["@babel/plugin-transform-react-jsx","syntax-dynamic-import"]
   }
   
