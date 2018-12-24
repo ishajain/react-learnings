@@ -33,4 +33,4 @@ class AppComponent extends React.Component{
     }
 }
 
-render(<AppComponent/>,document.getElementById("root"));
+render(<AppComponent />,document.getElementById("root"));
