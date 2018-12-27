@@ -1,4 +1,5 @@
 import React from "react";
+
 import { UserComponent} from "./UserComponent"; 
 export  class HomeComponent extends React.Component{
  render (){
@@ -6,14 +7,8 @@ export  class HomeComponent extends React.Component{
      return (
          <div>
              <h2>Hello from home component</h2>
-             <UserComponent Users={
-                [
-                    {Name : "Isha" , Age : 33, Hobbies :["Cooking", "Dancing", "Yoga"]},
-                    {Name : "Romit", Age : 32, Hobbies :["Cooking", "Cycling", "Reading", "Dancing"]}
-                
-                ]} InTotal={[2,3]}
-             />
-            
+             <UserComponent name={"Isha"} age = {34} />
+           
          </div>
      );
  }
